@@ -17,17 +17,17 @@
     justify-content: space-around;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
+    font-size: calc(auto+3px);
 
 }
 
 li:hover{
     color: #892020;
-    border-radius: 5px;
 }
 
 .icons{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 70px;
     height: 24px;
 }

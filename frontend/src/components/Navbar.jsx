@@ -2,7 +2,8 @@ import Logo from "../assets/logo.png";
 import { IoIosSearch } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa6";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
-import "../styles/navbar.css"
+import {NavLink} from "react-router-dom";
+import "../styles/navbar.css";
 
 
 function Navbar() {
@@ -12,9 +13,10 @@ function Navbar() {
            <img src={Logo} alt="logo" />
         </div>
         <ul className="menu">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li ><NavLink to="/">HOME</NavLink></li>
+            <li ><NavLink to="/collection">COLLECTION</NavLink></li>
+            <li ><NavLink to="/about">ABOUT</NavLink></li>
+            <li ><NavLink to="/contact">CONTACT</NavLink></li>
          </ul>
          <div className="icons">
             <IoIosSearch/>
